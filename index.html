@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg"></div>
+    <button class="btn" id="button"></button>
+    <div class="lens">
+        <div class="blue-lens">
+            <div id="white-flash"></div>
+            <div id="blue-flash"></div>
+        </div>
+        <div class="middle"></div>
+    </div>
+    <div class="speaker"></div>
+    <div class="sensor1">
+        <div id="red1"></div>
+    </div>
+    <div class="sensor2"></div>
+    <div class="sensor3"></div>
+
+    <button class="back">Back</button>
+    <button class="play">Play</button>
+    <button class="next">Next</button>
+    <button class="loop">Loop : Off </button>
+
+    <input type="range" id="progressBar" value="0" min="0" max="100" step="0.1" />
+    <div id="timeDisplay">00:00 / 00:00 </div>
+
+    <div class="songList"></div>
+
+    <audio class="music"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
