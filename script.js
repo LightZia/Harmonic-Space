@@ -1,55 +1,88 @@
-const btn = document.querySelector('.btn');
-const lens = document.querySelector('.lens');
-const whiteFlash = document.getElementById('white-flash');
-const blueFlash = document.getElementById('blue-flash');
-const sensor = document.querySelector('.sensor1');
-const sensorlight = document.getElementById('red1');
 const play = document.querySelector('.play');
 const audio = document.querySelector('.music');
 const next = document.querySelector('.next');
 const back = document.querySelector('.back');
 const loopBtn = document.querySelector('.loop');
 const progressBar = document.getElementById('progressBar');
-const timeDisplay = document.getElementById("timeDisplay");
+const currentTimeDisplay = document.getElementById("currentTimeDisplay");
+const durationTimeDisplay = document.getElementById("durationTimeDisplay");
 const songListContainer = document.querySelector('.songList');
-
-// To change the theme of the panel bar on top of the screen
-btn.addEventListener('click', function(){
-    btn.classList.toggle('active')
-})
-
-// To create a moving reflection in the lens of the camera
-lens.addEventListener('mouseenter', () => {
-    whiteFlash.style.transform = 'translateX(6px)';
-    blueFlash.style.transform = 'translateX(-1px)';
-    
-})
-lens.addEventListener('mouseleave', () => {
-    whiteFlash.style.transform = 'translateX(0px)';
-    blueFlash.style.transform = 'translateX(0px)';
-})
-
-// To turn on the sensor light on the panel bar
-sensor.addEventListener('mouseenter', () => {
-    sensorlight.style.opacity = 1;
-})
-sensor.addEventListener('mouseleave', () => {
-    sensorlight.style.opacity = 0;
-})
+const volumeButton = document.getElementById('volumeButton');
+const volumeSlider = document.getElementById('volumeSlider');
+const cover = document.getElementById("cover");
+const coverName = document.getElementById("coverName")
+const menu = document.querySelector('.menu')
+const main = document.querySelector('.main')
 
 // List of songs
 const songs = [
-    {name : "Fall on Grass 2", file : "songs/Fall on Grass remake.mp3", image : "covers/Fall on Grass 2.jpg"},
-    {name : "Fall on Grass", file : "songs/Fall on Grass.mp3", image : "covers/Fall on Grass new.JPG"},
-    {name : "Airtel (Orchestral Version)", file : "songs/airtel.mp3", image : "covers/Airtel.png"},
-    {name : "Vaz Deir", file : "songs/phonk.mp3", image : "covers/Vaz Deir.jpg"},
-    {name : "Existence", file : "songs/something.wav", image : "covers/Existence.jpg"},
+    {
+        name : "Fall on Grass 2",
+        file : "songs/Fall on Grass remake.mp3",
+        image : "covers/Fall on Grass 2.jpg"
+    },
+    {
+        name : "Fall on Grass",
+        file : "songs/Fall on Grass.mp3",
+        image : "covers/Fall on Grass new.JPG"
+    },
+    {
+        name : "Airtel (Orchestral Version)",
+        file : "songs/airtel.mp3",
+        image : "covers/Airtel.png"
+    },
+    {
+        name : "Vaz Deir",
+        file : "songs/phonk.mp3",
+        image : "covers/Vaz Deir.jpg"
+    },
+    {
+        name : "Existence",
+        file : "songs/something.wav",
+        image : "covers/Existence.jpg"
+    },
+    {
+        name : "Rise of Dawn",
+        file : "songs/Credits.mp3",
+        image : "covers/rISE OF dAWN.jpg"
+    },
+    {
+        name : "Hope",
+        file : "songs/Hope.mp3",
+        image : "covers/Hope.jpg"
+    },
+    {
+        name : "Wind of Fire",
+        file : "songs/intense.mp3",
+        image : "covers/Wind of fire.jpg"
+    },
+    {
+        name : "Underground Lad",
+        file : "songs/hahahahahaha.mp3",
+        image : "covers/Underground Lad.png"
+    },
+    {
+        name : "Night Rose",
+        file : "songs/Project_8.mp3",
+        image : "covers/Night Rose.png"
+    },
+    {
+        name : "Evil of Occult",
+        file : "songs/Rap.mp3",
+        image : "covers/Evil of Occult.png"
+    },
+    {
+        name : "Toota jo Kabhi Taara (Acoustic)",
+        file : "songs/Taara.mp3",
+        image : "covers/Toota jo kabhi taara instrumental.png"
+    }
 ]
 
 let currentIndex = 0;   //Index of Song
 let isPlaying = false;  //Check weather anything is playing or not
 let loopIndex = 0;      //Index of the loop i.e., either off, single or all loop
-let songButtons = [];
+let songButtons = [];   //Array of all the songs
+let isOpen = false;
 
 // To switch between 'off', 'on' or 'all' loop
 loopBtn.addEventListener('click', () => {
@@ -57,24 +90,41 @@ loopBtn.addEventListener('click', () => {
 
     // If loop is off
     if(loopIndex === 0){
-        loopBtn.innerText = 'Loop : Off '
+        loopBtn.innerText = '✖ '
         audio.loop = false;
     }
     // If loop is on
     else if (loopIndex === 1){
-        loopBtn.innerText = 'Loop : On '
+        loopBtn.innerText = '➰ '
         audio.loop = true;
     }
     // Iff loop is all
     else{
-        loopBtn.innerText = 'Loop : All '
+        loopBtn.innerText = '➿ '
         audio.loop = false;
+    }
+})
+
+volumeButton.addEventListener('click', () => {
+    volumeSlider.style.display = volumeSlider.style.display === "flex" ? "none" : "flex"
+})
+
+volumeSlider.addEventListener("input", function() {
+    audio.volume = this.value;
+    if(audio.volume === 0){
+        volumeButton.innerText = "🔇"
+    }
+    else{
+        volumeButton.innerText = "🔊"
     }
 })
 
 // Function to load song in audio src
 function loadSong(index){
     audio.src = songs[index].file;
+    cover.src = songs[index].image;
+    coverName.textContent = songs[index].name;
+    console.log(cover);
     currentIndex = index;
     updateActiveSong();
 }
@@ -83,14 +133,14 @@ function loadSong(index){
 function playSong(){
     audio.play();
     isPlaying = true;
-    play.innerText = 'Pause';
+    play.innerText = '⏸';
 }
 
 // Function for all the elements when a song is paused
 function pauseSong(){
     audio.pause();
     isPlaying = false;
-    play.innerText = 'Play';
+    play.innerText = '▶';
 }
 
 loadSong(currentIndex);
@@ -99,6 +149,13 @@ function updateActiveSong(){
     songButtons.forEach((button, idx) => {
         button.classList.toggle("active", idx === currentIndex);
     })
+}
+
+function restartAudio() {
+  audio.currentTime = 0;
+  audio.play();
+  play.innerText = '⏸';
+  isPlaying = true;
 }
 
 // To toggle between play and pause
@@ -117,10 +174,15 @@ next.addEventListener('click', () => {
 
 // To skip back
 back.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + songs.length) % songs.length;
-    loadSong(currentIndex)
-    playSong();
-    // updateActiveSong();
+    if(audio.currentTime < 7){
+        currentIndex = (currentIndex - 1 + songs.length) % songs.length;
+        loadSong(currentIndex)
+        playSong();
+        // updateActiveSong();
+    }
+    else{
+        restartAudio();
+    }
 })
 
 // To play every song and loop back or to pause if the loop is off after a song ends
@@ -157,7 +219,8 @@ function formatTime(time) {
 audio.addEventListener("timeupdate", () => {
   const current = formatTime(audio.currentTime);
   const duration = formatTime(audio.duration || 0);
-  timeDisplay.textContent = `${current} / ${duration}`;
+  currentTimeDisplay.textContent = `${current}`;
+  durationTimeDisplay.textContent = `${duration}`
 });
 
 // Generate buttons for each song
@@ -180,3 +243,17 @@ songs.forEach((song, index) => {
     updateActiveSong();
 })
 
+menu.addEventListener('click', () => {
+    if(isOpen === false){
+        songListContainer.style.transform = "translateX(10px)"
+        menu.style.transform = "translateX(400px)"
+        isOpen = true
+        main.style.transform = 'translateX(200px)'
+    }
+    else{
+        songListContainer.style.transform = "translateX(-400px)"
+        menu.style.transform = "translateX(0px)"
+        main.style.transform = 'translateX(0px)'
+        isOpen = false
+    }
+})

@@ -8,30 +8,42 @@
 </head>
 <body>
     <div class="bg"></div>
-    <button class="btn" id="button"></button>
-    <div class="lens">
-        <div class="blue-lens">
-            <div id="white-flash"></div>
-            <div id="blue-flash"></div>
+
+    <div class="menu">🟰</div>
+    
+    <div class="main">
+
+        <div class="coverElements">
+            <img id="cover" src="covers/Fall on Grass 2.jpg" alt="cover" />
+            <span id="coverName"></span>
         </div>
-        <div class="middle"></div>
-    </div>
-    <div class="speaker"></div>
-    <div class="sensor1">
-        <div id="red1"></div>
-    </div>
-    <div class="sensor2"></div>
-    <div class="sensor3"></div>
+        
+        <div class="time">
+            <div class="timeDisplay">
+                <div id="currentTimeDisplay">00:00</div>
+                <input type="range" id="progressBar" value="0" min="0" max="100" step="0.1" />
+                <div id="durationTimeDisplay">00:00</div>
+            </div>
+        </div>
 
-    <button class="back">Back</button>
-    <button class="play">Play</button>
-    <button class="next">Next</button>
-    <button class="loop">Loop : Off </button>
+        <div class="controlPanel">
 
-    <input type="range" id="progressBar" value="0" min="0" max="100" step="0.1" />
-    <div id="timeDisplay">00:00 / 00:00 </div>
+            <div class="volumeContainer">
+                <buton id="volumeButton">🔊</buton>
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+            </div>
+            
+            <div class="back">⏮</div>
+            <div class="play">▶</div>
+            <div class="next">⏭</div>
+            <div class="loop">✖</div>
+        </div>
+    </div>
+
+
 
     <div class="songList"></div>
+
 
     <audio class="music"></audio>
 
