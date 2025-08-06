@@ -76,6 +76,11 @@ const songs = [
         name : "Toota jo Kabhi Taara (Acoustic)",
         file : "songs/Taara.mp3",
         image : "covers/Toota jo kabhi taara instrumental.png"
+    },
+    {
+        name : "Koi Lamha",
+        file : "songs/untitled.mp3",
+        image : "covers/Koi Lamha.jpg"
     }
 ]
 

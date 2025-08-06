@@ -320,14 +320,14 @@ body{
     top: 0%;
     left: 0%;
     flex-direction: column;
-    overflow-y: scroll;
-    scrollbar-width: none;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .songList{
     margin-top: 18%;
+    scrollbar-width: none;
+    overflow-y: scroll;
     position: relative;
     width: auto;
     display: flex;
