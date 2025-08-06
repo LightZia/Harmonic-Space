@@ -2,7 +2,7 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
-    /* overflow: hidden; */
+    overflow-x: hidden;
     background-color: #e7b87a;
 }
 
@@ -40,6 +40,8 @@ body{
     position: relative;
     /* background-color: #ffffff49; */
     width: auto;
+    right: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,9 +138,9 @@ body{
 
 .volume-container {
     position: relative;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
 }
 #volumeButton{
     position: relative;
@@ -172,7 +174,7 @@ body{
   display: none;
   position: absolute;
   right: 72%;
-  bottom: 42%;
+  bottom: 35%;
   transform: translateX(-50%);
   width: 80px;
   appearance: none;
