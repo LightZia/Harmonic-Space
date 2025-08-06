@@ -68,9 +68,9 @@ const songs = [
         image : "covers/Night Rose.png"
     },
     {
-        name : "Evil of Occult",
+        name : "Occult Evil",
         file : "songs/Rap.mp3",
-        image : "covers/Evil of Occult.png"
+        image : "covers/Occult Evil.jpg"
     },
     {
         name : "Toota jo Kabhi Taara (Acoustic)",
