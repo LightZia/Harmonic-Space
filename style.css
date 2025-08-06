@@ -10,8 +10,8 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-image: url('bg (2).jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ body{
     justify-content: space-evenly;
     text-align: center;
     padding: 2%;
-    gap: 5px;
+    /* gap: 0px; */
     transition: all 0.5s ease-in-out;
 }
 
@@ -52,7 +52,7 @@ body{
     position: relative;
     width: 400px;
     height: 400px;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 10px;
     background-size: cover;
     object-fit: cover;
@@ -75,22 +75,17 @@ body{
     align-items: center;
 }
 
-.time{
-    width: 800px;
-    position: relative;
-    padding: 0;
-}
 .timeDisplay{
     position: relative;
     /* background-color: #fff; */
-    width: 800;
+    width: auto;
     bottom: 18.5%;
     right: 0;
     left: 0;
     display: flex;
     /* bottom: 20%; */
     justify-content: center;
-    gap: 20px;
+    /* gap: 5px; */
     /* border: 1px solid; */
 }
 
@@ -99,7 +94,7 @@ body{
     font-family: "Josefin Sans";
 }
 #progressBar {
-    width: 600px;
+    width: 60vw;
     height: 6px;
     appearance: none;
     background: #ccc;
@@ -123,12 +118,20 @@ body{
 .controlPanel{
     position: relative;
     width: auto;
-    display: flex;
+    display: block;
     margin-bottom: 10%;
     align-items: center;
     justify-content: center;
     gap: 30px;
     /* border: 1px solid; */
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 1%;
 }
 
 .volume-container {
@@ -301,7 +304,7 @@ body{
     background-color: #b60b0b9f;
 }
 
-.songList{
+.songListDiv{
     position: absolute;
     transform: translateX(-400px);
     transition: all 0.5s ease-in-out;
@@ -320,6 +323,15 @@ body{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.songList{
+    margin-top: 18%;
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
 }
 
 

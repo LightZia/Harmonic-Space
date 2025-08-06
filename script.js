@@ -13,6 +13,7 @@ const cover = document.getElementById("cover");
 const coverName = document.getElementById("coverName")
 const menu = document.querySelector('.menu')
 const main = document.querySelector('.main')
+const songListDiv = document.querySelector('.songListDiv')
 
 // List of songs
 const songs = [
@@ -245,14 +246,14 @@ songs.forEach((song, index) => {
 
 menu.addEventListener('click', () => {
     if(isOpen === false){
-        songListContainer.style.transform = "translateX(10px)"
-        menu.style.transform = "translateX(400px)"
+        songListDiv.style.transform = "translateX(0px)"
+        // menu.style.transform = "translateX(400px)"
         isOpen = true
         main.style.transform = 'translateX(200px)'
     }
     else{
-        songListContainer.style.transform = "translateX(-400px)"
-        menu.style.transform = "translateX(0px)"
+        songListDiv.style.transform = "translateX(-400px)"
+        // menu.style.transform = "translateX(0px)"
         main.style.transform = 'translateX(0px)'
         isOpen = false
     }
