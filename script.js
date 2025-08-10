@@ -20,67 +20,80 @@ const songs = [
     {
         name : "Fall on Grass 2",
         file : "songs/Fall on Grass remake.mp3",
-        image : "covers/Fall on Grass 2.jpg"
+        image : "covers/Fall on Grass 2.jpg",
+        class: "fall-on-grass-2"
     },
     {
         name : "Fall on Grass",
         file : "songs/Fall on Grass.mp3",
-        image : "covers/Fall on Grass new.JPG"
+        image : "covers/Fall on Grass new.JPG",
+        class: "fall-on-grass"
     },
     {
         name : "Airtel (Orchestral Version)",
         file : "songs/airtel.mp3",
-        image : "covers/Airtel.png"
+        image : "covers/Airtel.png",
+        class: "airtel"
     },
     {
         name : "Vaz Deir",
         file : "songs/phonk.mp3",
-        image : "covers/Vaz Deir.jpg"
+        image : "covers/Vaz Deir.jpg",
+        class: "vaz-deir"
     },
     {
         name : "Existence",
         file : "songs/something.wav",
-        image : "covers/Existence.jpg"
+        image : "covers/Existence.jpg",
+        class: "existence"
     },
     {
         name : "Rise of Dawn",
         file : "songs/Credits.mp3",
-        image : "covers/rISE OF dAWN.jpg"
+        image : "covers/rISE OF dAWN.jpg",
+        class: "rise-of-dawn"
     },
     {
         name : "Hope",
         file : "songs/Hope.mp3",
-        image : "covers/Hope.jpg"
+        image : "covers/Hope.jpg",
+        class: "hope"
     },
     {
         name : "Wind of Fire",
         file : "songs/intense.mp3",
-        image : "covers/Wind of fire.jpg"
+        image : "covers/Wind of fire.jpg",
+        class: "wind-of-fire"
     },
     {
         name : "Underground Lad",
         file : "songs/hahahahahaha.mp3",
-        image : "covers/Underground Lad.png"
+        image : "covers/Underground Lad.png",
+        class: "underground-lad"
     },
     {
         name : "Night Rose",
         file : "songs/Project_8.mp3",
-        image : "covers/Night Rose.png"
+        image : "covers/Night Rose.png",
+        class: "night-rose"
     },
     {
         name : "Occult Evil",
         file : "songs/Rap.mp3",
-        image : "covers/Occult Evil.jpg"
+        image : "covers/Occult Evil.jpg",
+        class: "occult-evil"
     },
     {
         name : "Toota jo Kabhi Taara (Acoustic)",
         file : "songs/Taara.mp3",
-        image : "covers/Toota jo kabhi taara instrumental.png"
+        image : "covers/Toota jo kabhi taara instrumental.png",
+        class: "toota-jo-kabhi-taara"
     },
     {
         name : "Koi Lamha",
         file : "songs/untitled.mp3",
-        image : "covers/Koi Lamha.jpg"
+        image : "covers/Koi Lamha.jpg",
+        class: "koi-lamha"
     }
 ]
 
@@ -127,6 +140,8 @@ volumeSlider.addEventListener("input", function() {
 
 // Function to load song in audio src
 function loadSong(index){
+    document.body.classList.remove(...songs.map(s => s.class));
+    document.body.classList.add(songs[index].class)
     audio.src = songs[index].file;
     cover.src = songs[index].image;
     coverName.textContent = songs[index].name;

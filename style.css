@@ -1,9 +1,236 @@
+:root{
+    --bg-image: url('bg-cover/Fall-on-Grass-2-bg.jpeg');
+    --button-bg: #c73939b6;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.301),
+                -3px -3px 10px 3px rgba(226, 85, 85, 0.281),
+                inset -3px -3px 10px 3px rgba(226, 166, 166, 0.281),
+                inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+    --btn-hvr-clr: #e01212b6;
+    --title-font: "Bradley Hand ITC";
+    --title-color: #afafaf;
+    --title-weight: 600;
+    --title-size: 35px;
+    --time-clr: #ffffff;
+}
+
+.fall-on-grass-2{
+    --bg-image: url('bg-cover/Fall-on-Grass-2-bg.jpeg');
+    --button-bg: #c73939b6;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.301),
+                -3px -3px 10px 3px rgba(226, 85, 85, 0.281),
+                inset -3px -3px 10px 3px rgba(226, 166, 166, 0.281),
+                inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+    --btn-hvr-clr: #e01212b6;
+    --title-font: "Bradley Hand ITC";
+    --title-color: #afafaf;
+    --title-weight: 600;
+    --title-size: 35px;
+    --time-clr: #ffffff;
+}
+.fall-on-grass{
+    --bg-image: url('bg-cover/Fall-on-grass-bg.jpeg');
+    --button-bg: #4bce6cb6;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.301),
+    -3px -3px 10px 3px rgba(163, 230, 172, 0.281),
+                inset -3px -3px 10px 3px rgba(163, 230, 172, 0.281),
+                inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+    --time-clr: #ffffff;
+    --btn-hvr-clr: #00ffbfe8;
+    --title-font: "Pristina";
+    --title-size: 35px;
+    --title-color: #afafaf;
+    --title-weight: 600;
+}
+.airtel{
+    --bg-image: url('bg-cover/Airtel-bg.jpg');
+    --button-bg: #636363af;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.644),
+                -2px -2px 10px 3px rgba(141, 141, 141, 0.281),
+                inset -3px -3px 10px 3px rgba(170, 170, 170, 0.281),
+                inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+    --time-clr: #ffffff;
+    --btn-hvr-clr: #2b2b2b;
+    --title-font: "Josefin Sans";
+    --title-size: 38px;
+    --title-color: #afafaf;
+    --title-weight: 600;
+}
+.vaz-deir{
+    --bg-image: url('bg-cover/Vaz-Deir-bg.jpeg');
+    --button-bg: #d82561af;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.644),
+    -2px -2px 10px 3px rgba(240, 44, 142, 0.281),
+    inset -3px -3px 10px 3px rgba(240, 44, 142, 0.281),
+    inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+    --btn-hvr-clr: #ee1048;
+    --title-font: "French Script MT";
+    --title-size: 45px; 
+    --title-color: #afafaf;
+    --title-weight: 600;
+    --time-clr: #ffffff;
+}
+.existence{
+    --bg-image: url('bg-cover/Existence-bg.png');
+    --button-bg: #c02121d2;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.644),
+                -1px -2px 10px 3px rgba(187, 70, 70, 0.336),
+                inset -3px -3px 10px 3px rgba(187, 70, 70, 0.336),
+                inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+    --btn-hvr-clr: #741616;
+    --title-font: "Papyrus";
+    --title-size: 38px;
+    --title-color: #ffffff;
+    --title-weight: 500;
+    --time-clr: #fff;
+}
+.rise-of-dawn{
+    --bg-image: url('bg-cover/Rise-of-Dawn-bg.jpeg');
+    --button-bg: #d89025af;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.644),
+    -1px -1px 10px 3px rgba(240, 227, 44, 0.281),
+    inset -3px -3px 10px 3px rgba(241, 226, 91, 0.281),
+                inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+                --btn-hvr-clr: #ff7b00e8;
+    --title-font: "Josefin Sans";
+    --title-size: 38px;    
+    --title-color: #afafaf;
+    --title-weight: 600;
+    --time-clr: #ffffff;
+}
+.hope{
+    --bg-image: url('bg-cover/Hope-bg.png');
+    --button-bg: #08225bd2;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.644),
+                -1px -2px 10px 3px rgba(82, 70, 187, 0.336),
+                inset -3px -3px 10px 3px rgba(70, 101, 187, 0.336),
+                inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+    --btn-hvr-clr: #08225b;
+    --title-font: "KG Hope For A Cure";
+    --title-size: 38px;
+    --title-color: #ffffff;
+    --title-weight: 500;
+    --time-clr: #fff;
+}
+.wind-of-fire{
+    --bg-image: url('bg-cover/Wind-of-fire-bg.jpg');
+    --button-bg: #6579afd2;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.644),
+                -1px -2px 10px 3px rgba(70, 82, 187, 0.336),
+                inset -3px -3px 10px 3px rgba(91, 70, 187, 0.336),
+                inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+    --btn-hvr-clr: #51448a;
+    --title-font: "Youth Fury PERSONAL USE";
+    --title-size: 38px;
+    --title-color: #ffffff;
+    --title-weight: 500;
+    --time-clr: #fff;
+}
+.underground-lad{
+    --bg-image: url('bg-cover/Underground-lad-bg.jpeg');
+    --button-bg: #acaaaaaf;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.644),
+                -2px -2px 10px 3px rgba(141, 141, 141, 0.281),
+                inset -3px -3px 10px 3px rgba(170, 170, 170, 0.281),
+                inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+    --btn-hvr-clr: #6b6b6b;
+    --title-font: "Sketch Book";
+    --title-size: 38px;
+    --title-color: #000;
+    --title-weight: 500;
+    --time-clr: #292929;
+}
+.night-rose{
+    --bg-image: url('bg-cover/Night-rose-bg.jpeg');
+    --button-bg: #853434af;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.644),
+                -2px -2px 10px 3px rgba(116, 35, 35, 0.281),
+                inset -3px -3px 10px 3px rgba(116, 35, 35, 0.281),
+                inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+    --btn-hvr-clr: #741616;
+    --title-font: "Lonely";
+    --title-size: 40px;
+    --title-color: #ffffff;
+    --title-weight: 500;
+    --time-clr: #ffffff;
+}
+.occult-evil{
+    --bg-image: url('bg-cover/Occult-evil-bg.jpeg');
+    --button-bg: #360707af;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.644),
+                -2px -2px 10px 3px rgba(116, 35, 35, 0.281),
+                inset -3px -3px 10px 3px rgba(116, 35, 35, 0.281),
+                inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+    --btn-hvr-clr: #741616;
+    --title-font: "Impact";
+    --title-size: 40px;
+    --title-color: #ffffff;
+    --title-weight: 500;
+    --time-clr: #ffffff;
+}
+.toota-jo-kabhi-taara{
+    --bg-image: url('bg-cover/Toota-taara-bg.jpeg');
+    --button-bg: #646060d2;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.644),
+                -1px -2px 10px 3px rgba(255, 255, 255, 0.336),
+                inset -3px -3px 10px 3px rgba(255, 255, 255, 0.822),
+                inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+    --btn-hvr-clr: #2b2b2b;
+    --title-font: "MingLiU-ExtB";
+    --title-size: 32px;
+    --title-color: #ffffff;
+    --title-weight: 500;
+    --time-clr: #ffffff;
+}
+.koi-lamha{
+    --bg-image: url('bg-cover/Koi-lamha-bg.jpeg');
+    --button-bg: #bbbbbbd2;
+    --bckdrp-fltr: blur(10px);
+    --wbkt-fltr: blur(10px);
+    --bx-shdw: 3px 3px 10px 3px rgba(0, 0, 0, 0.644),
+                -1px -2px 10px 3px rgba(255, 255, 255, 0.336),
+                inset -3px -3px 10px 3px rgba(255, 255, 255, 0.822),
+                inset 3px 3px 10px 3px rgba(0, 0, 0, 0.301);
+    --btn-hvr-clr: #e4e4e4;
+    --title-font: "KG Hope For A Cure";
+    --title-size: 38px;
+    --title-color: #ffffff;
+    --title-weight: 500;
+    --time-clr: #000000;
+}
+
 body{
     justify-content: center;
     align-items: center;
     display: flex;
     overflow-x: hidden;
-    background-color: #e7b87a;
+    /* background-color: #da7a64; */
+    background: #000000;
 }
 
 .bg{
@@ -12,26 +239,29 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('bg (2).jpg');
+    background-image: var(--bg-image);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.3;
+    opacity: 1;
+    filter: blur(20px);
     z-index: -1;
+    transition: background-image 0.5s ease-in-out;
 }
 
 .main{
     position: absolute;
     /* background-color: #ffffff36; */
     width: auto;
-    height: auto;
+    height: 100%;
     top: 0%;
     bottom: 0%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
-    padding: 2%;
+    /* padding: 2%; */
     /* gap: 0px; */
     transition: all 0.5s ease-in-out;
 }
@@ -39,6 +269,7 @@ body{
 .coverElements{
     position: relative;
     /* background-color: #ffffff49; */
+    top: 10%;
     width: auto;
     right: 0;
     left: 0;
@@ -55,23 +286,25 @@ body{
     width: 400px;
     height: 400px;
     /* background-color: #fff; */
-    border-radius: 10px;
+    border-radius: 5px;
     background-size: cover;
     object-fit: cover;
     background-position: center;
-    box-shadow: 0 4px 19px rgba(0, 0, 0, 0.568);
+    box-shadow: 0px 0px 40px 0px rgb(0, 0, 0);
     user-select: none;
 }
 #coverName{
     position: relative;
     width: auto;
-    padding: 20px;
+    padding: 12px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    font-family: Quicksand;
-    font-size: 30px;
+    font-family: var(--title-font);
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
+    color: var(--title-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,45 +313,49 @@ body{
 .timeDisplay{
     position: relative;
     /* background-color: #fff; */
-    width: auto;
-    bottom: 18.5%;
+    width: 80vw;
+    top: 2%;
+    /* bottom: 18.5%; */
     right: 0;
     left: 0;
     display: flex;
     /* bottom: 20%; */
     justify-content: center;
-    /* gap: 5px; */
+    gap: 10px;
     /* border: 1px solid; */
 }
 
 #currentTimeDisplay{
     position: relative;
     font-family: "Josefin Sans";
+    color: var(--time-clr);
 }
 #progressBar {
-    width: 60vw;
-    height: 6px;
+    width: 35vw;
+    height: 3px;
     appearance: none;
-    background: #ccc;
+    background: #cccccc3a;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
-    top: 4px;
+    top: 6px;
 }
 #progressBar::-webkit-slider-thumb {
     appearance: none;
     width: 10px;
-    height: 6px;
-    background: #333;
+    height: 10px;
+    background: #ffffff;
     border-radius: 50px;
 }
 #durationTimeDisplay{
     position: relative;
     font-family: "Josefin Sans";
+    color: var(--time-clr);
 }
 
 .controlPanel{
     position: relative;
+    top: 10%;
     width: auto;
     display: block;
     margin-bottom: 10%;
@@ -154,13 +391,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #b60b0b44;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.473),
-    inset -4px -3px 13px rgba(255, 223, 223, 0.37),
-    inset 4px 3px 13px rgba(0, 0, 0, 0.26),
-    -4px -3px 13px rgba(255, 235, 235, 0.301);
+    background: var(--button-bg);
+    /* backdrop-filter: var(--bckdrp-fltr); */
+    /* -webkit-backdrop-filter: var(--wbkt-fltr); */
+    box-shadow: var(--bx-shdw);
     transition: background-color 0.2s ease-in-out;
     user-select: none;
     -webkit-user-select: none; /* Safari */
@@ -168,10 +402,10 @@ body{
     -ms-user-select: none;
 }
 #volumeButton:hover{
-    background-color: #b60b0b9f;
+    background-color: var(--btn-hvr-clr);
 }
 #volumeSlider {
-  display: none;
+    display: none;
   position: absolute;
   right: 72%;
   bottom: 35%;
@@ -194,6 +428,7 @@ body{
 .play{
     position: relative;
     width: 80px;
+    box-shadow: var(--bx-shdw);
     height: 80px;
     border-radius: 50%;
     border: none;
@@ -204,13 +439,13 @@ body{
     /* border: 1px solid black; */
     padding: 4px;
     cursor: pointer;
-    background: #b60b0b44;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.473),
-    inset -4px -3px 13px rgba(255, 223, 223, 0.37),
-    inset 4px 3px 13px rgba(0, 0, 0, 0.26),
-    -4px -3px 13px rgba(255, 235, 235, 0.301);
+    background: var(--button-bg);
+    /* backdrop-filter: blur(5px); */
+    /* -webkit-backdrop-filter: blur(5px); */
+    /* box-shadow: 4px 3px 13px rgb(0, 0, 0), */
+    /* inset -4px -3px 13px rgba(255, 223, 223, 0.37), */
+    /* inset 4px 3px 13px rgba(0, 0, 0, 0.26), */
+    /* -4px -3px 13px rgb(255, 235, 235); */
     transition: background-color 0.2s ease-in-out;
     user-select: none;
     -webkit-user-select: none; /* Safari */
@@ -218,7 +453,7 @@ body{
     -ms-user-select: none;
 }
 .play:hover{
-    background-color: #b60b0b9f;
+    background-color: var(--btn-hvr-clr);
 }
 
 .back{
@@ -230,15 +465,16 @@ body{
     padding: 4px;
     cursor: pointer;
     display: flex;
+    box-shadow: var(--bx-shdw);
     align-items: center;
     justify-content: center;
-    background: #b60b0b44;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.473),
-    inset -4px -3px 13px rgba(255, 223, 223, 0.37),
-    inset 4px 3px 13px rgba(0, 0, 0, 0.26),
-    -4px -3px 13px rgba(255, 235, 235, 0.301);
+    background: var(--button-bg);
+    /* backdrop-filter: blur(5px); */
+    /* -webkit-backdrop-filter: blur(5px); */
+    /* box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.473), */
+    /* inset -4px -3px 13px rgba(255, 223, 223, 0.37), */
+    /* inset 4px 3px 13px rgba(0, 0, 0, 0.26), */
+    /* -4px -3px 13px rgba(255, 235, 235, 0.301); */
     transition: background-color 0.2s ease-in-out;
     user-select: none;
     -webkit-user-select: none; /* Safari */
@@ -246,7 +482,7 @@ body{
     -ms-user-select: none;
 }
 .back:hover{
-    background-color: #b60b0b9f;
+    background-color: var(--btn-hvr-clr);
 }
 
 .next{
@@ -260,13 +496,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #b60b0b44;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.473),
-    inset -4px -3px 13px rgba(255, 223, 223, 0.37),
-    inset 4px 3px 13px rgba(0, 0, 0, 0.26),
-    -4px -3px 13px rgba(255, 235, 235, 0.301);
+    background: var(--button-bg);
+    /* backdrop-filter: blur(5px); */
+    /* -webkit-backdrop-filter: blur(5px); */
+    /* box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.473), */
+    /* inset -4px -3px 13px rgba(255, 223, 223, 0.37), */
+    /* inset 4px 3px 13px rgba(0, 0, 0, 0.26), */
+    /* -4px -3px 13px rgba(255, 235, 235, 0.301); */
+    box-shadow: var(--bx-shdw);
     transition: background-color 0.2s ease-in-out;
     user-select: none;
     -webkit-user-select: none; /* Safari */
@@ -274,7 +511,7 @@ body{
     -ms-user-select: none;
 }
 .next:hover{
-    background-color: #b60b0b9f;
+    background-color: var(--btn-hvr-clr);
 }
 
 .loop{
@@ -289,13 +526,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #b60b0b44;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.473),
-    inset -4px -3px 13px rgba(255, 223, 223, 0.37),
-    inset 4px 3px 13px rgba(0, 0, 0, 0.26),
-    -4px -3px 13px rgba(255, 235, 235, 0.301);
+    box-shadow: var(--bx-shdw);
+    background: var(--button-bg);
+    /* backdrop-filter: blur(5px); */
+    /* -webkit-backdrop-filter: blur(5px); */
+    /* box-shadow: 4px 3px 13px rgba(0, 0, 0, 0.473), */
+    /* inset -4px -3px 13px rgba(255, 223, 223, 0.37), */
+    /* inset 4px 3px 13px rgba(0, 0, 0, 0.26), */
+    /* -4px -3px 13px rgba(255, 235, 235, 0.301); */
     transition: background-color 0.2s ease-in-out;
     user-select: none;
     -webkit-user-select: none; /* Safari */
@@ -303,7 +541,7 @@ body{
     -ms-user-select: none;
 }
 .loop:hover{
-    background-color: #b60b0b9f;
+    background-color: var(--btn-hvr-clr);
 }
 
 .songListDiv{
@@ -385,4 +623,5 @@ body{
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     z-index: 9;
+    user-select: none;
 }
