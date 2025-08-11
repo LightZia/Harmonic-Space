@@ -5,51 +5,64 @@ i{
 @font-face {
     font-family: 'Bradley Hand ITC';
     src: url('fonts/BRADHI.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Pristina';
     src: url('fonts/PRISTINA.TTF');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Josefin Sans';
     src: url('fonts/JosefinSans-Light.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'French Script MT';
     src: url('fonts/FRSCRIPT.TTF');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Papyrus';
     src: url(fonts/papyrus.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family: "KG Hope For A Cure";
     src: url('fonts/KGHopeForACure.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: "Youth Fury PERSONAL USE";
     src: url('fonts/YouthFuryPersonalUse-zMea.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: Sketch Book;
     src: url('fonts/Sketch\ Book.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Lonely';
     src: url('fonts/Lonely.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Impact';
     src: url('fonts/impact.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: "MingLiU-ExtB";
     src: url('fonts/mingliu.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: "Quicksand";
     src: url('fonts/Quicksand_Light.otf');
+    font-display: swap;
 }
+
 
 :root{
     --bg-image: url('bg-cover/Fall-on-Grass-2-bg.jpeg');
