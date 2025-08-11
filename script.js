@@ -175,7 +175,7 @@ function updateActiveSong(){
 function restartAudio() {
   audio.currentTime = 0;
   audio.play();
-  play.innerText = '⏸';
+  play.innerHTML = `<i class="fas fa-pause"></i>`;
   isPlaying = true;
 }
 
