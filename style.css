@@ -1,3 +1,52 @@
+@font-face {
+    font-family: 'Bradley Hand ITC';
+    src: url('fonts/BRADHI.ttf');
+}
+@font-face {
+    font-family: 'Pristina';
+    src: url('fonts/PRISTINA.TTF');
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('fonts/JosefinSans-Light.ttf');
+}
+@font-face {
+    font-family: 'French Script MT';
+    src: url('fonts/FRSCRIPT.TTF');
+}
+@font-face {
+    font-family: 'Papyrus';
+    src: url(fonts/papyrus.ttf);
+}
+@font-face {
+    font-family: "KG Hope For A Cure";
+    src: url('fonts/KGHopeForACure.ttf');
+}
+@font-face {
+    font-family: "Youth Fury PERSONAL USE";
+    src: url('fonts/YouthFuryPersonalUse-zMea.ttf');
+}
+@font-face {
+    font-family: Sketch Book;
+    src: url('fonts/Sketch\ Book.ttf');
+}
+@font-face {
+    font-family: 'Lonely';
+    src: url('fonts/Lonely.ttf');
+}
+@font-face {
+    font-family: 'Impact';
+    src: url('fonts/impact.ttf');
+}
+@font-face {
+    font-family: "MingLiU-ExtB";
+    src: url('fonts/mingliu.ttf');
+}
+@font-face {
+    font-family: "Quicksand";
+    src: url('fonts/Quicksand_Light.otf');
+}
+
 :root{
     --bg-image: url('bg-cover/Fall-on-Grass-2-bg.jpeg');
     --button-bg: #c73939b6;
@@ -244,7 +293,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     opacity: 1;
-    filter: blur(20px);
+    filter: blur(1.5vw);
     z-index: -1;
     transition: background-image 0.5s ease-in-out;
 }
@@ -401,9 +450,6 @@ body{
     -moz-user-select: none;    /* Firefox */
     -ms-user-select: none;
 }
-#volumeButton:hover{
-    background-color: var(--btn-hvr-clr);
-}
 #volumeSlider {
     display: none;
   position: absolute;
@@ -452,9 +498,6 @@ body{
     -moz-user-select: none;    /* Firefox */
     -ms-user-select: none;
 }
-.play:hover{
-    background-color: var(--btn-hvr-clr);
-}
 
 .back{
     position: relative;
@@ -480,9 +523,6 @@ body{
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none;    /* Firefox */
     -ms-user-select: none;
-}
-.back:hover{
-    background-color: var(--btn-hvr-clr);
 }
 
 .next{
@@ -510,12 +550,9 @@ body{
     -moz-user-select: none;    /* Firefox */
     -ms-user-select: none;
 }
-.next:hover{
-    background-color: var(--btn-hvr-clr);
-}
 
 .loop{
-    position: relative;
+        position: relative;
     width: 30px;
     height: 30px;
     border-radius: 50px;
@@ -539,9 +576,6 @@ body{
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none;    /* Firefox */
     -ms-user-select: none;
-}
-.loop:hover{
-    background-color: var(--btn-hvr-clr);
 }
 
 .songListDiv{
@@ -578,7 +612,7 @@ body{
 .song-item {
     display: flex;
     align-items: center;
-    width: 380px;
+    width: 360px;
     gap: 10px;
     padding: 5px;
     border: none;
@@ -611,9 +645,6 @@ body{
     border: 2px solid #ff0000;
 }
 
-.song-item:hover {
-    background-color: #b60b0b9f;
-}
 
 .menu{
     position: absolute;
@@ -624,4 +655,26 @@ body{
     transition: all 0.5s ease-in-out;
     z-index: 9;
     user-select: none;
+}
+
+@media (hover: hover) and (pointer: fine){
+    .song-item:hover {
+        background-color: #b60b0b9f;
+    }
+    .loop:hover{
+        background-color: var(--btn-hvr-clr);
+    }
+    .next:hover{
+        background-color: var(--btn-hvr-clr);
+    }
+    .back:hover{
+        background-color: var(--btn-hvr-clr);
+    }
+    .play:hover{
+        background-color: var(--btn-hvr-clr);
+    }
+    #volumeButton:hover{
+        background-color: var(--btn-hvr-clr);
+    }
+    
 }

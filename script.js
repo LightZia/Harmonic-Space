@@ -256,6 +256,10 @@ songs.forEach((song, index) => {
     button.addEventListener("click", () => {
         loadSong(index);
         playSong();
+        if(isOpen === true){
+            songListDiv.style.transform = "translateX(-400px)"
+            isOpen = false
+        }
     });
 
     songButtons.push(button)
@@ -269,12 +273,12 @@ menu.addEventListener('click', () => {
         songListDiv.style.transform = "translateX(0px)"
         // menu.style.transform = "translateX(400px)"
         isOpen = true
-        main.style.transform = 'translateX(200px)'
+        // main.style.transform = 'translateX(200px)'
     }
     else{
         songListDiv.style.transform = "translateX(-400px)"
         // menu.style.transform = "translateX(0px)"
-        main.style.transform = 'translateX(0px)'
+        // main.style.transform = 'translateX(0px)'
         isOpen = false
     }
 })
