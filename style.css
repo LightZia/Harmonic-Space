@@ -269,7 +269,7 @@ body{
 .coverElements{
     position: relative;
     /* background-color: #ffffff49; */
-    top: 10%;
+    top: 5%;
     width: auto;
     right: 0;
     left: 0;
@@ -283,8 +283,8 @@ body{
 }
 #cover{
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 45vh;
+    height: 45vh;
     /* background-color: #fff; */
     border-radius: 5px;
     background-size: cover;
@@ -313,11 +313,11 @@ body{
 .timeDisplay{
     position: relative;
     /* background-color: #fff; */
-    width: 80vw;
+    width: 100vw;
     top: 2%;
     /* bottom: 18.5%; */
-    right: 0;
-    left: 0;
+    /* right: 0; */
+    /* left: 0; */
     display: flex;
     /* bottom: 20%; */
     justify-content: center;
@@ -331,7 +331,7 @@ body{
     color: var(--time-clr);
 }
 #progressBar {
-    width: 35vw;
+    width: 65vw;
     height: 3px;
     appearance: none;
     background: #cccccc3a;
