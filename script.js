@@ -124,18 +124,18 @@ loopBtn.addEventListener('click', () => {
     }
 })
 
-volumeButton.addEventListener('click', () => {
-    volumeSlider.style.display = volumeSlider.style.display === "flex" ? "none" : "flex"
-})
+function mute(){
+    volumeButton.innerHTML = `<i class="fas fa-volume-mute"></i>`
+}
+function volumeUp(){
+    volumeButton.innerHTML = `<i class="fas fa-volume-up"></i>`
+}
 
-volumeSlider.addEventListener("input", function() {
-    audio.volume = this.value;
-    if(audio.volume === 0){
-        volumeButton.innerText = "🔇"
-    }
-    else{
-        volumeButton.innerText = "🔊"
-    }
+volumeButton.addEventListener("click", () => {
+    audio.muted = !audio.muted; // toggle mute state
+    volumeButton.className = audio.muted 
+        ? mute()
+        : volumeUp();
 })
 
 // Function to load song in audio src
