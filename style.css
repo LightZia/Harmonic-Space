@@ -24,7 +24,7 @@ i{
 }
 @font-face {
     font-family: 'Papyrus';
-    src: url(fonts/papyrus.ttf);
+    src: url('fonts/papyrus.ttf');
     font-display: swap;
 }
 @font-face {
