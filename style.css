@@ -1,3 +1,7 @@
+i{
+    color: white;
+}
+
 @font-face {
     font-family: 'Bradley Hand ITC';
     src: url('fonts/BRADHI.ttf');
@@ -677,4 +681,14 @@ body{
         background-color: var(--btn-hvr-clr);
     }
     
+}
+
+
+
+.single-loop::after {
+  content: "1";
+  font-size: 0.1em;
+  position: relative;
+  bottom: 0px;
+  left: 2px;
 }

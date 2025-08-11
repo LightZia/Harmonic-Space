@@ -109,18 +109,18 @@ loopBtn.addEventListener('click', () => {
 
     // If loop is off
     if(loopIndex === 0){
-        loopBtn.innerText = '✖ '
+        loopBtn.innerHTML = `<i class="fas fa-times"></i>`
         audio.loop = false;
     }
     // If loop is on
     else if (loopIndex === 1){
-        loopBtn.innerText = '➰ '
-        audio.loop = true;
+        loopBtn.innerHTML = `<i class="fas fa-repeat"></i>`
+        audio.loop = false;
     }
     // Iff loop is all
     else{
-        loopBtn.innerText = '➿ '
-        audio.loop = false;
+        loopBtn.innerHTML = `<i class="fas fa-repeat single-loop"></i>`
+        audio.loop = true;
     }
 })
 
@@ -154,14 +154,14 @@ function loadSong(index){
 function playSong(){
     audio.play();
     isPlaying = true;
-    play.innerText = '⏸';
+    play.innerHTML = `<i class="fas fa-pause"></i>`;
 }
 
 // Function for all the elements when a song is paused
 function pauseSong(){
     audio.pause();
     isPlaying = false;
-    play.innerText = '▶';
+    play.innerHTML = `<i class="fas fa-play"></i>`;
 }
 
 loadSong(currentIndex);
@@ -208,7 +208,7 @@ back.addEventListener('click', () => {
 
 // To play every song and loop back or to pause if the loop is off after a song ends
 audio.addEventListener('ended', () => {
-    if(loopIndex === 2){
+    if(loopIndex === 1){
         currentIndex = (currentIndex + 1) % songs.length;
         loadSong(currentIndex);
         playSong();
