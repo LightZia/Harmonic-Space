@@ -310,7 +310,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     opacity: 1;
-    filter: blur(1.5vw);
+    filter: blur(1vw);
     z-index: -1;
     transition: background-image 0.5s ease-in-out;
 }
