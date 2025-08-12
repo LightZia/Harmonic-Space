@@ -43,7 +43,7 @@ const songs = [
     },
     {
         name : "Existence",
-        file : "songs/something.wav",
+        file : "songs/something.mp3",
         image : "cover/Existence.JPG",
         class: "existence"
     },
