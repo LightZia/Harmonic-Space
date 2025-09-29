@@ -18,6 +18,12 @@ const songListDiv = document.querySelector('.songListDiv')
 // List of songs
 const songs = [
     {
+        name : "Koi Lamha",
+        file : "songs/Koi Lamha.mp3",
+        image : "cover/Koi Lamha.JPG",
+        class: "koi-lamha"
+    },
+    {
         name : "Fall on Grass 2",
         file : "songs/Fall on Grass remake.mp3",
         image : "cover/Fall on Grass 2.JPG",
@@ -43,7 +49,6 @@ const songs = [
     },
     {
         name : "Existence",
-        file : "songs/something.mp3",
         image : "cover/Existence.JPG",
         class: "existence"
     },
@@ -89,12 +94,6 @@ const songs = [
         image : "cover/Toota jo kabhi taara.JPG",
         class: "toota-jo-kabhi-taara"
     },
-    {
-        name : "Koi Lamha",
-        file : "songs/untitled.mp3",
-        image : "cover/Koi Lamha.JPG",
-        class: "koi-lamha"
-    }
 ]
 
 let currentIndex = 0;   //Index of Song
