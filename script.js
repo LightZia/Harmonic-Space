@@ -49,6 +49,7 @@ const songs = [
     },
     {
         name : "Existence",
+        file: "songs/something.mp3",
         image : "cover/Existence.JPG",
         class: "existence"
     },
